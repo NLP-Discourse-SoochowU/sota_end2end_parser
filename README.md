@@ -1,9 +1,8 @@
 ## Introduction
 
 In this project, we provide an end2end DRS parser where the EDU segmenter
-in "Zhang et al., Syntax-Guided Sequence to Sequence Modeling for Discourse
-Segmentation" and the DRS parser in "Zhang et al., Adversarial Learning for
-Discourse Rhetorical Structure Parsing" are applied.
+in "Zhang et al., **Syntax-Guided Sequence to Sequence Modeling for Discourse Segmentation**" 
+and the DRS parser in "Zhang et al., **Adversarial Learning for Discourse Rhetorical Structure Parsing**" are applied.
 
 Any questions, just send e-mails to zzlynx@outlook.com (Longyin Zhang).
 
