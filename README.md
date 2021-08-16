@@ -4,6 +4,7 @@ In this project, we provide an end2end DRS parser where the EDU segmenter
 in "Zhang et al., Syntax-Guided Sequence to Sequence Modeling for Discourse
 Segmentation" and the DRS parser in "Zhang et al., Adversarial Learning for
 Discourse Rhetorical Structure Parsing" are applied.
+
 Any questions, just send e-mails to zzlynx@outlook.com (Longyin Zhang).
 
 
@@ -26,14 +27,11 @@ and the extraction code is **n6hx**.
 2. Due to the file size limitation, we put the pre-trained model at
 https://pan.baidu.com/s/1UaL4z6LH5kdEmpGbMAqXuA, and the password is **n6hx**.
 After obtaining the pre-trained models, you need to put the two files at the
-following two places.
+following two places. **It should be noted that since many real-life data usually do not contain standard paragraph boundaries, we only provide the pre-trained model with sentence boundaries considered, which is closer to practical application.**
 ```
    (parser) data/models_saved/test_f_max_pth
    (LM) data/models_saved/test_f_max_xl_pth
 ```
-It should be noted that since many real-life data usually do not contain standard 
-paragraph boundaries, we only provide the pre-trained model with sentence boundaries 
-considered, which is closer to practical application.
 
 3. Prepare your own data with reference to the examples in "data/e2e", where
 "raw.txt" refers to the article with several sentences, "edu.txt" refers to the
