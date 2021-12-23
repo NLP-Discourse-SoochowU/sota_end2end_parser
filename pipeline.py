@@ -23,7 +23,7 @@ import gc
 p = progressbar.ProgressBar()
 
 tokenizer_xl = XLNetTokenizer.from_pretrained(XLNET_TYPE)
-model_xl = torch.load("data/models_saved/v9_set149/test_f_max_xl_model.pth")
+model_xl = torch.load("data/models_saved/xl_model.pth")
 model_xl.eval()
 if USE_CUDA:
     model_xl.cuda(CUDA_ID)
@@ -305,7 +305,7 @@ def prepare_dt(seg_edus):
 
 def do_parse(seg_edus):
     edus = prepare_dt(seg_edus)
-    model = torch.load("data/models_saved/v9_set149/test_f_max_model.pth").cuda(CUDA_ID)
+    model = torch.load("data/models_saved/model.pth").cuda(CUDA_ID)
     model.eval()
     parser = PartitionPtrParser()
     trees = []
