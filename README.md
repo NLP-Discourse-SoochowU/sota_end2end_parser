@@ -24,12 +24,12 @@ a duplication of it for you at "https://pan.baidu.com/s/1FGZe9vBZap2ZNv_D3XyRjA"
 and the extraction code is **n6hx**.
 
 2. Due to the file size limitation, we put the pre-trained model at
-https://pan.baidu.com/s/1UaL4z6LH5kdEmpGbMAqXuA, and the password is **n6hx**.
+https://pan.baidu.com/s/1u0FLgPydISKR-MVcs2SFdg, and the password is **lynx**.
 After obtaining the pre-trained models, you need to put the two files at the
 following two places. **It should be noted that since many real-life data usually do not contain standard paragraph boundaries, we only provide the pre-trained model with sentence boundaries considered, which is closer to practical application.**
 ```
-   (parser) data/models_saved/test_f_max_pth
-   (LM) data/models_saved/test_f_max_xl_pth
+   (parser) data/models_saved/model.pth
+   (LM) data/models_saved/xl_model.pth
 ```
 
 3. Prepare your own data with reference to the examples in "data/e2e", where
