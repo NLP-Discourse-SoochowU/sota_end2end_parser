@@ -3,7 +3,7 @@
 """
 @Author: Lyzhang
 @Date:
-@Description: Implementation of ELMo and bert in RST-style Segmentation.
+@Description:
 """
 from util.file_util import *
 from config_segment import *
@@ -311,18 +311,18 @@ def do_parse(seg_edus):
     trees = []
     p.start(len(edus))
     p_idx = 1
-    save_idx = 1
+    # save_idx = 1
     for idx, doc_instances in enumerate(edus):
         p.update(p_idx)
         p_idx += 1
         tree = parser.parse(doc_instances, model)
         trees.append(tree)
-        if idx > 0 and idx % 3000 == 0:
-            save_data(trees, NMT_Trees_p + str(save_idx) + ".pkl")
-            save_idx += 1
-            del trees
-            gc.collect()
-            trees = []
+        # if idx > 0 and idx % 3000 == 0:
+        #     save_data(trees, NMT_Trees_p + str(save_idx) + ".pkl")
+        #     save_idx += 1
+        #     del trees
+        #     gc.collect()
+        #     trees = []
     p.finish()
     return trees
 
