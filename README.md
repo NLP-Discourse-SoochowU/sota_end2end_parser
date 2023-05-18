@@ -34,8 +34,9 @@ following two places. **It should be noted that since many real-life data usuall
 
 3. Prepare your own data with reference to the examples in "data/e2e", where
 "raw.txt" refers to the article with several sentences, "edu.txt" refers to the
-texts after EDU segmentation, and "trees.pkl" refers to the generated DRS trees.
-When everything is ready, run the following command:
+texts after EDU segmentation, and "trees.pkl" refers to the generated DRS trees. 
+When everything is ready, run the following command: (Highlight: you only need to 
+prepare the raw.txt, others will be formed after you run pipeline.py)
 ```
    python pipeline.py
 ```
